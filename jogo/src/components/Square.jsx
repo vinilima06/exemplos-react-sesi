@@ -12,3 +12,4 @@ function Square({ value, onClick }) {
 
 // Exporta o componente Square como padrão
 export default Square;
+
