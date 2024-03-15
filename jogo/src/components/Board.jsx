@@ -20,7 +20,7 @@ const Board = () => {
     const newSquares = squares.slice();
 
     // Preenche o quadrado com "X" ou "O" com base na vez do jogador
-    newSquares[i] = xIsNext ? "X" : "O";
+    newSquares[i] = xIsNext ? "🥸" : "🥷";
 
     // Atualiza o estado dos quadrados e passa a vez para o próximo jogador
     setSquares(newSquares);
@@ -44,7 +44,7 @@ const Board = () => {
           <p className="winner">O vencedor é: {winner}!</p>
         ) : (
           // Exibe o próximo jogador se não houver vencedor
-          `Próximo a jogar: ${xIsNext ? "X" : "O"}`
+          `Próximo a jogar: ${xIsNext ? "bigode" : "ninja"}`
         )}
       </div>
       {/* Renderização das linhas do tabuleiro com componentes Square */}
